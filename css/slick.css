@@ -128,7 +128,7 @@
         font-size:0; width:37px; height:70px; background-size:cover;
     background-repeat: no-repeat;}
 
-  .slick-dots{font-size:0; position:absolute; bottom: 50px; left:50%; transform: translate(-50%);}
+  .slick-dots{font-size:0; position:absolute; bottom: -50px; left:50%; transform: translate(-50%);}
  .slick-dots li{display:inline-block;margin: 0 10px;}
  .slick-dots button{background-color:#FFF;width:20px;height: 20px; border-radius:50%;font-size:0; border:none}
 .slick-dots li.slick-active button{background-color:rgba(0,0,0,0.5);}
