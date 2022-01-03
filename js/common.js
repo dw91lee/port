@@ -128,19 +128,42 @@ $('.top').click(function(){
      })//window scroll
      
 
-        $('#stage li').click(function(){
+        $('.panels li').click(function(){
           var img = $(this).find('img');
           var a_href = img.attr('title')
           var text_1 = $(this).attr('alt')
           $('.full_zoom').fadeIn();
           $('.full_zoom .img img').attr('src',a_href)
           $('.full_zoom .txt').attr('alt',text_1)       
+          $('html').css({'overflow':'hidden'});
           $('.full_zoom .button').click(function(){
               $('.full_zoom').fadeOut();
+                $('html').css({'overflow':'auto'});
            }) //닫기버튼
         })//그림띄우기
 
-});   //jquery 전체
+
+
+        $('.tabSet').each(function(){   //this = .tabSet
+          var anchor = $(this).find('.tabs a');
+          var anchor_on = $(this).find('.tabs a.on');
+          var href_on = anchor_on.attr('href');
+          var panel_all = $(this).find('.panel');
+          
+          $(href_on).show();
+  
+          anchor.each(function(){ //this = .tabs a
+            var href = $(this).attr('href');
+  
+            $(this).click(function(){   //this = 클릭된 .tabs a 
+              panel_all.hide(); 
+              anchor.removeClass('on')
+              $(this).addClass('on')
+              $(href).show();
+            })
+          })
+       })
+    });   //jquery 전체
 
 $(document).on("mousewheel DOMMouseScroll",function(e){
     e.preventDefault();
