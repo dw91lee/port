@@ -25,7 +25,7 @@ a:hover{text-decoration: underline;}
 #nav{position: absolute;top:0;right:0; z-index: 99999999999999999999;}
 .nav_btn{position: absolute;right:30px;top:30px;z-index: 99999999999999999998;background-color: transparent;border:none;display: none;}    
 .nav_btn span{display: block;width:30px;height:3px; border-radius: 3px;background-color:#ddd;margin-bottom:5px}
- #nav_mo{position: fixed;z-index: 99999999999999999999;background-color: rgba(0,0,0, 0.6);width:100%;height: 100%;right:-100%;top:0;display: none;} 
+ #nav_mo{position: fixed;z-index: 99999999999999999999;background-color: rgba(0,0,0, 0.6);width:100%;height: 100%;right:-100%;top:0;display: none;transition: 0.5s;} 
  #nav_mo div{width:200px;background-color: #fff;height:100%;padding-top:20px;text-align: right;position: absolute;right:0;}
  #nav_mo .close{position: absolute;left:-50px;top:30px;z-index: 99999999999999999998;background-color: transparent;border:none}            
  #nav_mo .close span{display: block;width:30px;height:3px;background-color: #fff;position: absolute;top:0;left:0}
