@@ -93,6 +93,14 @@ jQuery('.web_guide a').click(function (event) {
   event.preventDefault();
 });
 
+$('.nav_btn').click(function(){
+$('#nav_mo').css({'right':'0'})
+})
+
+$('#nav_mo .close span').click(function(){
+  $('#nav_mo').css({'right':'-100%'})
+})
+
 
 $('.top').click(function(){
   event.preventDefault();
