@@ -146,7 +146,8 @@ $('.top').click(function(){
           $('html').css({'overflow':'hidden'});
           $('.full_zoom .button').click(function(){
               $('.full_zoom').fadeOut();
-              a_href = ""
+              a_href = "";
+              $('.full_zoom .img img').attr('src',a_href)
                 $('html').css({'overflow':'auto'});
            }) //닫기버튼
         })//그림띄우기
