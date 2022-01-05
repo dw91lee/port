@@ -6,6 +6,7 @@
         @font-face { font-family : font_woff;  font-weight:700;  
             src : url(../font/Title_Bold.woff); }  
    
+            .under_line{text-decoration: underline;}
     section{background-color:transparent;padding-top:117px;text-align: center;}
     h4{font-size:3rem; color:#000;text-align: center;padding: 20px 0;}
     img{padding: 20px 0;}
