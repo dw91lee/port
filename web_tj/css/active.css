@@ -2,15 +2,38 @@
     #box .slick-next{right:0}
     .box1, .box2, .box3, .box4, .box5, .box6{background-size: 50%;}
     #box  .box_mama{background-position: right 10px  bottom 60px}
-    
+    #menu .menu_papa {margin-bottom: 50px;}
     #nav{display: none;}
    }/*end*/ 
 @media all and (max-width:1024px){
 
     #box .notice{flex-wrap: wrap;}
-   }/*end*/
+  
    #slide .right{padding-top:50px;padding-left:20px;}
    .news p{display: none}
    
    #menu .menu_box{padding:15px 30px}
+}
 
+@media all and (max-width:1023px){
+    #slide .slide_content{display: flex !important; width: 100%;flex-wrap: wrap;}
+}
+
+@media all and (max-width:750px){#deli .inner {flex-wrap: wrap;}
+#box .box_slide img {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 100%;}
+
+    #box{padding: 50px 0}
+
+    #box .news_box{width: 100%;margin-bottom:50px;}
+#deli .deli_box{width: 100%; margin-bottom: 50px;}
+}
+
+@media all and (max-width:750px){ 
+    #box .box_mama, #box .box_mama2{width:100%;margin-bottom:50px}
+    #footer .inner {justify-content: center;}
+    #box .box_mini_papa {flex-wrap: wrap;}
+    #footer .footer_box {justify-content: center;}
+}
