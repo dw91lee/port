@@ -22,7 +22,32 @@ $(function(){
               $('#nav_mo').css({'top':'-110%'})
             })
             
+	/*
+	
+	$("셀렉터1").이벤트(function(){
+		$("셀렉터2")
+		.animate({css속성:값},시간,움직임방식,콜백함수)	
+	})
+	
+	*/
 
+	// .open1을 클릭 -> .rightwrap이 보여짐. 자신의 left속성의 값을 0으로 이동시킴.
+	$(".open1").click(function(){
+		$(".rightwrap").animate({left:0},500,"swing")
+		});
+			
+	$(".close1").click(function(){
+		$(".rightwrap").animate({left:-300},500,"swing")
+		});
+		
+	$('.depth1 > li').each(function() {
+      var submenu = $(this).find('.sub');
+      var submenu_link = $(this).children('a');
+      $(submenu_link).click(function(){
+         $(submenu).stop().slideToggle();
+       })
+	});		
+	
 
       $(".menu_papa").mouseover(function() {		
         $(this).find('img').attr("src", $(this).find('img').attr("src").replace(".png","_on.png"));
