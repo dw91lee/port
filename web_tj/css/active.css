@@ -1,0 +1,16 @@
+@media all and (max-width:1300px){
+    #box .slick-next{right:0}
+    .box1, .box2, .box3, .box4, .box5, .box6{background-size: 50%;}
+    #box  .box_mama{background-position: right 10px  bottom 60px}
+    
+    #nav{display: none;}
+   }/*end*/ 
+@media all and (max-width:1024px){
+
+    #box .notice{flex-wrap: wrap;}
+   }/*end*/
+   #slide .right{padding-top:50px;padding-left:20px;}
+   .news p{display: none}
+   
+   #menu .menu_box{padding:15px 30px}
+
