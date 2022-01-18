@@ -41,14 +41,16 @@
     #footer .footer_txt{width:calc(100% - 450px);}
     #footer .inner{display: flex; justify-content: space-around;}
 }
-
-
+@media all and (max-width:768px){
+    #box .box_slide img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius:0;
+        border-radius:20px;
+        width: 100%;}
+}
 
 @media all and (max-width:750px){#deli .inner {flex-wrap: wrap;}
-#box .box_slide img {
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    width: 100%;}
+
     #footer .footer_txt{width:calc(100% - 250px);}
     #box{padding: 50px 0}
 

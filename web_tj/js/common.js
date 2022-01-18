@@ -74,6 +74,7 @@ $(function(){
       var submenu = $(this).find('.sub');
       var submenu_link = $(this).children('a');
       $(submenu_link).click(function(){
+        $('.depth1 .sub').slideUp();
          $(submenu).stop().slideToggle();
        })
 	});		
