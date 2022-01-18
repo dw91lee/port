@@ -8,7 +8,7 @@ $(function(){
       });
 
       $(function(){
-        $('#box .slick-slide').each(function(){ 
+        $('#box .box_slide').each(function(){ 
             if($(window).width() < 769){ 
               var img = $(this).find('img');
               var img_pc = img.attr('src'); 
@@ -23,7 +23,7 @@ $(function(){
          })  
           $(window).resize(function(){
             // 윈도우 창을 사용자가 움직이기 시작하면 이미지변수 다시 불러와야 함
-          $('#box .slick-slide').each(function(){ 
+          $('#box .box_slide').each(function(){ 
             if($(window).width() < 769){ 
               var img = $(this).find('img');
               var img_pc = img.attr('src'); 

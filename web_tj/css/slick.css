@@ -127,9 +127,9 @@
     background-color: transparent;
     font-size:0; width:20px; height:38px; background-repeat: no-repeat; cursor: pointer;}
 
-    #box .slick-arrow{position:absolute;bottom:250px;transform: translate(0,-50%);   z-index:99;
+    #box .slick-arrow{position:absolute;bottom:40%;transform: translate(0,-50%);   z-index:99;
         border:none;
-        background-color: transparent;
+        background-color: transparent; cursor: pointer;
         font-size:0; width:61px; height:61px; background-repeat: no-repeat;}
         #box .slick-next{right:0; background-image:url(../images/box_button.png);}
         #box .slick-prev{left:0; background-image:url(../images/box_button_prev.png);}
