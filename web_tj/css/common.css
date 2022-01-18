@@ -111,7 +111,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0d0b9', end
     display:block; left:0; top:0;} 
  
 
-#box .box_mini img{position: absolute;left:70px; bottom:0}
+#box .box_mini img{position: absolute;left:70px; bottom:10px;width:20%;opacity: 50%;}
 
 #box .box_mama:hover h4{text-decoration: underline;}
 #box .box_mama2:hover{background-color:#eee}
