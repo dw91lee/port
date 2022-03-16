@@ -1,0 +1,22 @@
+*{
+    margin:0; padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/valorant');
+@font-face {
+    font-family: 'ROKAFSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html{font-size:16px; color:#595854;font-family: 'Noto Sans KR', sans-serif;}
+ul,li{list-style-type: none;}
+img{vertical-align: middle;}
+a{text-decoration: none;color:inherit}
+.valolant{font-family: 'VALORANT', sans-serif;}

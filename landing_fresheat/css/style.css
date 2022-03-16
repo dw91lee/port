@@ -1,0 +1,134 @@
+.contInner{height:100%;width:100%;position:absolute} /*내용이 채워져서 높이가 잡히면 생략가능*/
+@keyframes slide {
+    from{
+        left: -100px;
+        opacity: 0;
+    }
+    to{
+        left:0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slider {
+    from{
+        right: -100px
+    }
+    to{
+        right:10%;
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes pen{
+    from{background-color:transparent;}
+    to{background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);}
+}
+
+ 
+.bg1{background-color:#ffffff;}
+.bg2{background-color:#D0E2D7;top:100%;text-align: center;}
+.bg3{top:200%;background: url(../images/wood.jpg) no-repeat;background-size: 100%;overflow: hidden;}
+.bg4{top:300%;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+     }	
+.bg5{top:400%;background: url(../images/fruit.jpg) no-repeat;background-size: 100%;overflow: hidden;}
+.inner{width:1200px; margin:0 auto;}
+.main{display: flex;  position: relative;flex-wrap: wrap;overflow-y:hidden;}
+.left{width:calc(100% - 300px);height:100%; }
+.left p{padding-left:50px}
+.left span{color:#48755a;font-weight: 600;}
+.main1{padding-top:20px}
+.right{width:300px; height: 100vh;background-color: #48755a;}
+.left h2{font-size: 6rem; color:#eee;margin-left:50px;position: relative;animation: slide 2s ease-out;}
+.left h3{font-size: 5rem; color:#eee;margin-left:50px;position: relative;animation: slide 2s ease-out;}
+.main p{font-size: 2.5rem; font-weight: 400; color:#333;line-height: 4.5rem;font-family: 'IBM Plex Sans KR', sans-serif;position: relative;animation: slide 2s ease-out;}
+.juice_img{position: absolute;right:10%;bottom:10%;animation: slider 2s ease-out;}
+.logo{margin-left:3%; margin-top:2%;top:0;left:0;}
+.logo a{width:278px; height:150px; display: block;background: url('../images/logo_150.png') no-repeat;transition: background 0.5s;  }
+
+.desc {background:  linear-gradient(to right, rgba(255,255,255,0) 50%, #f2f2f2 50%);background-size: 200%;}
+.bg2:hover .desc {background-position: -100% 0;}
+.td01 {transition: .35s ease .1s;}
+.td02 {transition: .35s ease .2s;}
+.td03 {transition: .35s ease .3s;}
+.td04 {transition: .35s ease .4s;}
+.td05 {transition: .35s ease .5s;}
+.td06 {transition: .35s ease .6s;}
+.td07 {transition: .35s ease .7s;}
+
+.bg2 .box{display: flex;justify-content: space-evenly;align-items: center;margin:auto;margin-top:50px;word-break: keep-all; text-align:left;padding:0 20px;padding-top:100px}
+.bg2 .right2{ width:calc(100% - 740px)}
+.bg2 h2{margin:35px 0; font-size:4rem; color:transparent;padding-left:30px;-webkit-text-stroke: 2px #48755a;transition: 1s;padding-top:50px;}
+.bg2 p{line-height: 3.4rem; font-size:1.8rem;color:#666;opacity: 1;/*animation: opacity 3s 2s; animation-fill-mode: forwards;*/}
+.bg2 .top2{margin-bottom: 10px;}
+.bg2 span{color:#48755a; font-weight: 500;font-size:1.9rem;/*animation: pen 3s 2s;animation-fill-mode: forwards;*/padding:0 5px}
+.bg2:hover .desc {background-position: -100% 0;}
+.bg2:hover h2{color:#48755a;}
+
+.bg3 .delivery_tit{margin:100px 0}
+.bg3{text-align: center;}
+.bg3 h2{font-size:3.5rem;color:#333;margin-bottom: 30px;padding-top:200px;font-family: 'ROKAFSansMedium';}
+.bg3 .delivery_tit p{font-size:1.8rem;color:#555; line-height: 2.5rem;}
+.bg3 ul{display: flex; justify-content: space-evenly;}
+.bg3 ul img{width: 150px;}
+.bg3 ul p{font-size:1.5rem;text-align: center; color:#48755a;padding-top:15px;font-family: 'NEXON Lv2 Gothic';}
+.bg3 h3{font-size:2.5rem;margin-bottom: 50px;color:#48755a;font-family: 'NEXON Lv2 Gothic'}
+.bg3 div {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.bg3 div::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.bg4{text-align: center; overflow: hidden;}
+.bg4 .option_tit{border-top: 3px dashed #48755a;border-bottom: 3px dashed #48755a;padding:40px 0;margin-top:25px;margin-bottom: 100px;}
+.bg4  .option_tit h2{font-size:4rem; font-family: 'ROKAFSansMedium';  background: linear-gradient(to right top, #48755a, #D0E2D7);
+    color: transparent;background-clip: text;
+    -webkit-background-clip: text;}
+.bg4  .option_tit p{font-size:1.5rem;line-height: 2.5rem;    font-family: 'ROKAFSansMedium';}
+.bg4 p{text-align: center;}
+
+.option_juice{position: relative;width:166px !important; height: 500px !important;}
+.option_juice img{height: 500px; width:166px;position:absolute;bottom:0px; 
+    left:50%;transform: translate(-50%,0);}
+/*.option_juice .option_txt{position:absolute;bottom:0;text-align:center;width: 100%; padding-top:10px}*/
+
+.bg5 .ice{display: flex;justify-content: space-between;align-items: center; background-color: rgba(238,238,238,0.8); padding:40px 50px;border-radius: 30px;margin:30px 0;}
+.bg5 h3{font-size:3rem;}
+.bg5 p{font-size:1.5rem;line-height: 3rem;}
+.bg5 h2{font-size:2.5rem;margin-bottom: 20px;font-family: 'ROKAFSansMedium';color:#48755a}
+.bg5 h5{font-weight:300;padding-top:10px}
+.bg5 fieldset {border:none;margin-bottom: 20px;}
+.bg5 input{padding:10px;border:none}
+.bg5 button{border:none;padding:10px;background-color: #D0E2D7;}
+.bg5 label{display: block;}
+.bg5 textarea{border:none}
+
+@media all and (max-width:1540px){
+    html{font-size:12px; 
+    }
+    .bg2 h2{margin:0;}
+    .bg3 h2{padding-top:90px}
+    .bg4 .slick-next{right:20px}
+    .bg4 .slick-prev{left:20px}
+    .bg4 .option_tit{padding:10px 0; margin-top:0}
+    .bg5 .ice{padding:20px 30px}
+    .bg5 input{font-size:1rem}
+    .bg5 button{position: absolute; bottom:10px; right:50%}
+
+}
